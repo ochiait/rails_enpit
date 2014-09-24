@@ -8,7 +8,7 @@ deploy:
   app: rails_enpit
   on:
     repo: ochiait/rails_enpit
-dons:
+addons:
 postgresql:  "9.3"
 before_script:
 -  psql  -c  'create  database  travis_ci_test;'  -U  postgres
