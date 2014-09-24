@@ -4,12 +4,12 @@ rvm:
 deploy:
   provider: heroku
   api_key:
-    secure: HSpt9uXcyRz25vc878kPgqjCZpkiow9pcAaoRX3sqIKDHroQVEFi7UhkmUgUBb1VPxTKvkAWsojFyQs91ghbg3dA3P7jWDrxJmxkOBFpdxxvfy22UbWYjZByhv4w8zytsVgi6FMObnKs4A34021IFDb2UE1p+p6JXhYUkz8AQR8=
-  app: rails_enpit
+    secure: ap/lSqK4l9bvtv6EJ2cdzBf20CPuf51aA2M9pilgbXyUBCwOpunoA05Ohyt1olOdJuvKO8W3SJetnj1I/h+KeSb0sNlXwYYJidcQvI4CV1V55KoEDILXznSd4jiT+kWIKBYh9S3a5JjAemmg6dh783DbuyZ2Dl9/Wvrsh545Lg8=
+  app: limitless-lowlands-3328
   on:
     repo: ochiait/rails_enpit
 addons:
-  postgresql:  "9.3"
+  postgresql: '9.3'
 before_script:
-  -  psql  -c  'create  database  travis_ci_test;'  -U  postgres
-  -  cp  config/database.yml.travis  config/database.yml
+- psql  -c  'create  database  travis_ci_test;'  -U  postgres
+- cp  config/database.yml.travis  config/database.yml
