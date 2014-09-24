@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.1.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: HSpt9uXcyRz25vc878kPgqjCZpkiow9pcAaoRX3sqIKDHroQVEFi7UhkmUgUBb1VPxTKvkAWsojFyQs91ghbg3dA3P7jWDrxJmxkOBFpdxxvfy22UbWYjZByhv4w8zytsVgi6FMObnKs4A34021IFDb2UE1p+p6JXhYUkz8AQR8=
+  app: rails_enpit
+  on:
+    repo: ochiait/rails_enpit
